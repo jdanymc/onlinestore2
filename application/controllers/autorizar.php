@@ -26,8 +26,10 @@ class Autorizar extends AbstractController {
                             'id' => $row->id,
                             'nombre' => $row->nombre.' '.$row->apellidos,
                             'tipo' => $row->usuarios_tipos_id,
-                            'login' => TRUE
+                            'login' => TRUE,
+                            'creado_en'=> $row->creado_en
                         );
+                       # print_r($sess_array);
                         $this->session->set_userdata($sess_array);
                     }
                     if($this->session->userdata('tipo')=='1')

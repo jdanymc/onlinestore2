@@ -11,6 +11,7 @@
     <h1>Inicio</h1>
     <h2>Bienvenido <?php echo $nombre; ?>!<br /> tu nivel es: Usuario
     </h2>
+    <P>Su fecha de registro es: <?php echo $creado_en;?></P>
     <button class="btn btn-default" onclick="location.href='./autorizar/salir'; return false;">Salir</button>
     </div>
 </body>
